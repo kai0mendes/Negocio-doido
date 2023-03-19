@@ -12,7 +12,7 @@ html, body {
     top: 0;
     left: 0;
     bottom: 0;
-    background: #886d22;
+    background: #011e4a;
     overflow-y: auto;
     width: 300px;
     transition: all ease-in-out 0.5s;
@@ -23,8 +23,7 @@ html, body {
 #header .profile img {
     margin: 15px auto;
     display: block;
-    width: 90px;
-    border: 5px solid black;
+    width: 120px;
     border-radius: 50%;
 }
 
@@ -36,7 +35,7 @@ html, body {
     -moz-text-align-last: center;
     text-align-last: center;
     color: #fff;
-}
+    }
 
 #header .profile .social-links a {
     font-size: 1rem;
@@ -94,7 +93,7 @@ html, body {
 }
 
 section#inicio{
-    background-image: url("/static/img/boa-mesa-de-negocios-em-fundo-preto.jpg");
+    background-image: url("/static/img/pexels-alex-conchillos-3648850.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -104,7 +103,8 @@ section#inicio{
 }
 
 section#inicio h2{
-    font-size: 6rem;   
+    font-size: 6rem;  
+    padding-left: 20px; 
 }
 
 section#inicio span#subtitle {
@@ -123,8 +123,55 @@ section#inicio div#arraste{
 section#inicio div#arraste a{
     text-decoration: none;
     color: #fff;
+    padding-bottom: 10px;
 }
 
+
+i.menu-mobile {
+    position: fixed;
+    color: #fff;
+    background-color: #011e4a;
+    right: 1rem;
+    top: 1rem;
+    font-size: 1.5rem;
+    border-radius: 4rem;
+    cursor: pointer;
+    z-index: 10;
+    width: 45px;
+    height: 45px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-nave-active {
+    overflow: hidden;
+}
+
+.menu-nave-active #header {
+    left: 0;
+}
+
+@media (max-width: 1024px) {
+
+    #header{
+        left: -300px;
+    }
+    i.menu-mobile{
+        display: flex;
+    }
+    section#inicio h2{
+        font-size: 3.5rem;
+    }
+    section#inicio span#subtitle{
+        margin-right: 0;
+        font-size: 1rem;
+    }
+
+    #main{
+        margin-left: 0;
+    }
+}
 
 
 
