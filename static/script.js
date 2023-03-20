@@ -9,3 +9,16 @@ menuMobile.addEventListener("click", () => {
     body.classList.toggle("menu-nave-active"); 
 });
 
+const navItem = document.querySelectorAll('.nav-item')
+
+navItem.forEach( item => {
+    item.addEventListener("click", () => {
+        if (body.classList.contains("menu-nave-active")){
+            body.classList.remove("menu-nave-active")
+            menuMobile.classList.replace("bi-x", "bi-list" );
+        }
+    })
+
+})
+
+
