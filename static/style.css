@@ -278,6 +278,8 @@ i.menu-mobile {
 
 
 
+
+
 @media (max-width: 1860px){
     .carousel-control-prev {
         margin-left: 0;
@@ -289,5 +291,38 @@ i.menu-mobile {
 
     [data-anime="right"] {
         transform: translate3d(0, 0, 0);
+    }
+}
+
+
+#btn-enviar-loader{
+    display: none;
+}
+
+#alerta {
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+}
+
+#footer {
+    padding: 15px;
+    color: #fff;
+    font-size: 14px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 300px;
+    z-index: 9999;
+    background-color: #011e4a;
+    transition: .3s;
+}
+
+@media (max-width:1012px){
+    #footer{
+        position: static;
+        width: auto;
+        padding: 20px 15px;
     }
 }
