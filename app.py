@@ -11,14 +11,14 @@ mail_settings = {
     "MAIL_USE_TLS": False,
     "MAIL_USE_SSL": True,
     "MAIL_USERNAME": email,
-    "MAIL_PASSWORD": mail_senha,
+    "MAIL_PASSWORD": senha,
 }
 
 app.config.update(mail_settings)
 
 mail = Mail(app)
 
-class contato:
+class Contato:
     def __init__(self, nome, email, mensagem):
         self.nome = nome,
         self.email = email,
